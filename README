@@ -6,5 +6,8 @@ http://letmein.at/experiments/multiuser-heatmap/
 If you are interested in the concept, read my articles:
 http://letmein.at/js/real-time-heatmap-explained/
 http://letmein.at/js/multi-user-real-time-heatmaps/
-
+---
+As mentioned above, you will need to install Ajax Push Engine (APE) to get it to work
+http://www.ape-project.org/
+---
 If you have any questions, message me! :)
