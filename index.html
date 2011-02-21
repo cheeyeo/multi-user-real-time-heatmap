@@ -1,0 +1,35 @@
+<!DOCTYPE html 
+     PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title>Multi-user real-time heatmap experiment with Canvas and Javascript on letmein.at</title>
+	<link rel="stylesheet" href="style.css" />
+	<script type="text/javascript" src="ape-jsf/apeClientJS.js"></script>
+	<script type="text/javascript" src="logic.js"></script>
+</head>
+<body>
+	<div id="loader">
+			<div>Please wait...<br />The heatmap app is connecting to the server</div>
+	</div> 
+	<div id="experiment">
+		<div style="width:900px;position:relative;margin:auto;"><h2>This experiment shows a possible approach on a multi-user real-time heatmap with HTMLCanvas, Javascript, a Message Oriented Middleware and Web Workers.</h2><a href="http://letmein.at/js/multi-user-real-time-heatmaps/" class="hl_blue" target="_blank" title="article about multi-user real-time heatmaps">Read the corresponding article</a></div>
+		<div style="width:650px;height:600px;position:relative;margin-top:20px;margin-left:20px;border:2px solid black;float:left;">
+			<canvas style="z-index:10;position:absolute;" id="c" width="650" height="600">no canvas support</canvas>
+			<img src="heatmap_bg.jpg" alt="" width="650" height="600" style="z-index:1" />
+		</div>
+		<div class="widget">
+			<div class="widgetHeadline">Users in channel</div>
+			<div class="widgetContent">
+				<ul id="userlist">
+				</ul>
+			</div>
+		</div>
+		<div id="coolerButton" class="rounded">
+			<img src="img/thermometer.png" width="48" height="48" alt="" /><span>Cool Heatmap down<br />(FF only)</span>
+		</div>
+		<div id="clearButton" class="rounded">
+			<img src="img/selection_delete.png" width="48" height="48" alt="" /><span>Clear your Heatmap</span>
+		</div>
+	</div>
+</body>
